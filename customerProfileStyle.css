@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 200px 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.orders-btn,
+.profileinfo-btn,
+.wishlist-btn {
+  font-size: 150%;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.orders-btn:hover,
+.profileinfo-btn:hover,
+.wishlist-btn:hover {
+  background-color: #ddd;
+}
+
+.right-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  background-color: aqua;
+  overflow: auto;
+  height: 500px;
+}
+
+.orders-content {
+  display: none;
+}
+
+.profile-info-content {
+  display: none;
+}
+
+.wishlist-content {
+  display: none;
+}
+
+.active {
+  width: 100%;
+}
+
+.active-content {
+  display: block;
+}
