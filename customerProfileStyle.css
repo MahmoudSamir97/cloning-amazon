@@ -155,3 +155,28 @@ body {
 .active-content {
   display: block;
 }
+/* *************Order Cards************* */
+.orders-cards {
+  border: 1px #d5d9d9 solid;
+  border-radius: 8px;
+  /* background-color: #febd69; */
+}
+.order-card-header {
+  display: flex;
+  border: 1px #d5d9d9 solid;
+  border-radius: 8px 8px 0px 0px;
+  height: 60px;
+}
+.order-details {
+  padding: 5px;
+}
+.order-details:nth-child(even) {
+  padding-left: 0px;
+}
+.order-card-body {
+  display: flex;
+}
+.product-img {
+  height: 100px;
+  width: auto;
+}
